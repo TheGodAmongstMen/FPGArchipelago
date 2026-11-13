@@ -1,0 +1,16 @@
+\section{ENGINEERING REQUIREMENTS}
+
+\begin{enumerate}
+	\item [4.1] The system shall communicate with a microSD card reader via SPI.
+	\item [4.2] The system shall emulate the architecture of an ARM7TDMI CPU.
+	\item [4.3] The system shall emulate the architecture of a Sharp SM83 CPU.
+	\item [4.4] The system shall have 32 KB of IWRAM that interfaces with the CPU's via a 32-bit bus.
+	\item [4.5] The system shall have 96 KB of VRAM that communicates with the PPU via a 16-bit bus.
+	\item [4.6] The system shall have 256 KB of EWRAM that communicates with the CPU via 16-bit bus.
+	\item [4.7] The system shall a sound generator that connects to the CPU via a 32-bit bus.
+	\item [4.8] The sound generator shall implement PCM to generate and play audio signals.
+	\item [4.9] There shall be a DMA unit and timer connected to the sound generator to speed up processing.
+	\item [4.10] The system shall present a controller to the user composed of a directional pad and 6 buttons.
+	\item [4.11] The system shall connect to a computer via UART to facilitate necessary Archipelago communications.
+	\item [4.12] The system shall come bundled with the necessary computer software to interface with the UART cable.
+\end{enumerate}
