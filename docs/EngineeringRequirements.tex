@@ -1,16 +1,43 @@
 \section{ENGINEERING REQUIREMENTS}
+\subsection{SYSTEM BLOCK DIAGRAM}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=.5]{block_diagram.png}
+\end{figure}
+\subsection{SYSTEM REQUIREMENTS}
+\subsubsection{Interface}
+\begin{enumerate}[label=\thesubsubsection.\arabic*]
+	\item The system shall use a 240x160 pixel LCD screen that communicates to the board via HDMI.
+	\item The system shall present a controller to the user composed of a directional pad and 6 buttons.
+	\item The system shall connect to a computer via UART to facilitate necessary Archipelago communications.
+\end{enumerate}
+\subsubsection{Hardware}
+\begin{enumerate}[label=\thesubsubsection.\arabic*]
+	\item The system shall be equipped with a headphone jack and speaker.
+	\item The system shall have a simple on-off switch.
+	\item The system shall have a slider wheel to control the sound volume.
+	\item The system shall be implemented on a Sipeed Tang Nano 20k.
+\end{enumerate}
+\subsubsection{Firmware}
+\begin{enumerate}[label=\thesubsubsection.\arabic*]
+	\item The system shall communicate with a microSD card reader via SPI.
+	\item The cartridge check shall determine which type of ROM is on the SD card and verify the integrity.
+	\item The prefetch buffer shall cache continuous addresses and shall hold up to eight 16-bit words.
+	\item The cartridge check shall communicate with the ROM card via a 16-bit bus and with the prefetch buffer via a 16-bit bus.
+	\item The prefetch buffer shall interface with the main system bus via a 32-bit bus.
+	\item The system shall emulate the architecture of an ARM7TDMI CPU.
+	\item The system shall emulate the architecture of a Sharp SM83 CPU.
+	\item The system shall have 32 KB of IWRAM that interfaces with the CPU's via a 32-bit bus.
+	\item The system shall have 96 KB of VRAM that communicates with the PPU via a 16-bit bus.
+	\item The system shall have 256 KB of EWRAM that communicates with the CPU via 16-bit bus.
+	\item The system shall have a sound generator that connects to the CPU via a 32-bit bus.
+	\item The sound generator shall implement PCM to generate and play audio signals.
+	\item There shall be a DMA unit and timer connected to the sound generator to speed up processing.
+	\item The ADC amplifier shall convert the digital sound signals into amplified analogue sound waves.
+\end{enumerate}
 
-\begin{enumerate}
-	\item [4.1] The system shall communicate with a microSD card reader via SPI.
-	\item [4.2] The system shall emulate the architecture of an ARM7TDMI CPU.
-	\item [4.3] The system shall emulate the architecture of a Sharp SM83 CPU.
-	\item [4.4] The system shall have 32 KB of IWRAM that interfaces with the CPU's via a 32-bit bus.
-	\item [4.5] The system shall have 96 KB of VRAM that communicates with the PPU via a 16-bit bus.
-	\item [4.6] The system shall have 256 KB of EWRAM that communicates with the CPU via 16-bit bus.
-	\item [4.7] The system shall a sound generator that connects to the CPU via a 32-bit bus.
-	\item [4.8] The sound generator shall implement PCM to generate and play audio signals.
-	\item [4.9] There shall be a DMA unit and timer connected to the sound generator to speed up processing.
-	\item [4.10] The system shall present a controller to the user composed of a directional pad and 6 buttons.
-	\item [4.11] The system shall connect to a computer via UART to facilitate necessary Archipelago communications.
-	\item [4.12] The system shall come bundled with the necessary computer software to interface with the UART cable.
+\subsubsection{Software}
+\begin{enumerate}[label=\thesubsubsection.\arabic*]
+	\item The system shall come bundled with the necessary computer software to interface with the UART cable.
+	\item The system shall include an AP world client to interface with the Archipelago servers.
 \end{enumerate}

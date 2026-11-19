@@ -1,19 +1,23 @@
 \section{SCOPE}
 
 
-\begin{enumerate}[(a)]
-	\item \textbf{\underline{General:}} \textbf{The scope of this document is to discuss and outline the requirements for FPGArchipelago, a system designed on an FPGA to emulate a Game Boy Advance with native Archipelago support. This documents provides stakeholder and engineering requirements for the FPGArchipelago system, as well as methods of verifications for the engineering requirements.}
+\begin{enumerate}
+	\item [(a)]\textbf{\underline{General:}} \textbf{The scope of this document is to discuss and outline the requirements for FPGArchipelago, a system designed on an FPGA to emulate a Game Boy Advance with native Archipelago support. This documents provides stakeholder and engineering requirements for the FPGArchipelago system, as well as methods of verifications for the engineering requirements.}
 \bigskip
 
 
-	\item \textbf{\underline{Acronyms:}} {
+	\item [(b)] \textbf{\underline{Acronyms:}} {
 		\begin{table}[ht]
 			\centering
 			\begin{tabular}{|c|c|}
 				\hline
 				\textbf{Acronym} & \textbf{Meaning} \\
 				\hline
+				ADC & Analogue-to-Digital Converter \\
+				\hline
 				ALU & Arithmetic Logic Unit \\
+				\hline
+				AP & Archipelago \\
 				\hline
 				APU & Audio Processing Unit \\
 				\hline
@@ -28,6 +32,8 @@
 				DDR & Double Data Rate \\
 				\hline
 				DMA& Direct Memory Access \\
+				\hline
+				DMG & Dot-Matrix Gameboy \\
 				\hline
 				DRAM & Dynamic RAM \\
 				\hline
@@ -45,13 +51,26 @@
 				\hline
 				FPU & Floating-Point Unit \\
 				\hline
-				GBA & Game Boy Advance \\
+				GBA & Gameboy Advance \\
+				\hline
+				GBC & Gameboy Color \\
+				\hline
+				HDMI & High-Definition Multimedia Interface \\
 				\hline
 				I/O & Input/Ouput \\
 				\hline
 				ISA & Instruction Set Architecture \\
 				\hline
 				IWRAM & Internal WRAM \\
+				\hline
+			\end{tabular}
+		\end{table}
+
+		\begin{table}[ht]
+			\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{Acronym} & \textbf{Meaning} \\
 				\hline
 				JTAG & Joint Test Action Group \\
 				\hline

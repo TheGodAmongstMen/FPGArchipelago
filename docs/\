@@ -1,0 +1,43 @@
+\section{VERIFICATION OF REQUIREMENTS}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|C{6cm}|c|c|}
+\hline
+\textbf{Paragraph Number} & \textbf{Test Type}& 
+\textbf{Tester's Name} & \textbf{Pass/Fail} & \textbf{Date} \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+ & & & & \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Interface}
+The accuracy and ease-of-use for the console shall be tested via play-testing.
+
+\subsection{Hardware}
+
+
+\subsection{Firmware}
+
+
+\subsection{Software}
+
